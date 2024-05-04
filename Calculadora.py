@@ -107,17 +107,17 @@ def again():
      # Variável If para dar continuidade caso a escolha da operação ser a "5", juntamente com a opção de zerar a questão anterior for positiva "1".
      # Se ambas respostas forem de acordo com a variável, então a operação irá necessitar de um novo produto "c".
      if nova_equacao == 5 and zero == 1:
-       c = int(input('Digite o valor do novo produto:')) 
+       c = float(input('Digite o valor do novo produto:')) 
 
      # Variável Elif para caso a escolha da operação ser a "6", juntamente com a opção de zerar a questão anterior "1" for positiva.
      #Se ambas as respotas forem de acordo com a variável, a nova operação "6" (potênciaçaõ), irá necessitar de um novo produto base "c" e um novo produto para ser seu expoente "d".
      elif nova_equacao == 6 and zero == 1:
-       c = int(input('Digite o valor do produto base da equação:'))
-       d = int(input('Digite o valor do expoente desse produto:'))
+       c = float(input('Digite o valor do produto base da equação:'))
+       d = float(input('Digite o valor do expoente desse produto:'))
      
      # Variável Elif para caso a escolha de operação estiver dentro do padrão (1,2,3,4,6), pois todas essas alternativas irão necessitar de um novo produto e a alternativa "c" irá necessitar de um novo expoente, caso a opção zero for igual à: "2".
      elif nova_equacao != 5: 
-       d = int(input('Digite o valor do novo denominador:'))
+       d = float(input('Digite o valor do novo denominador:'))
 
      # Opção match igual à anterior, mudando apenas suas variáveis "c" e "d", juntamente com a nova resposta da questão "e".    
      match nova_equacao:
