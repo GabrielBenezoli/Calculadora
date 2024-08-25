@@ -31,6 +31,10 @@ def again():
  # Variável string "ex" para compor a respota final, de acordo com a operação escolhida.
  if equacao >= 1 or equacao <= 6:
 
+  # a = Valor do primeiro produto da questão.
+  # b = Valor do segundo produto da questão.
+  # c = Resultado da operação entre 'a' e 'b'
+  # ex = Apenas uma string que irá ser adicionada na resposta verbal da questão.
   match equacao:
     case 1:
         c = a + b
@@ -119,7 +123,9 @@ def again():
      elif nova_equacao != 5: 
        d = float(input('Digite o valor do novo denominador:'))
 
-     # Opção match igual à anterior, mudando apenas suas variáveis "c" e "d", juntamente com a nova resposta da questão "e".    
+     # Opção match igual à anterior, mudando apenas suas variáveis "c" e "d", juntamente com a nova resposta da questão "e".  
+     # d = Valor do terceiro produto da questão.
+     # e = Resultado da operação entre 'c' e 'd'
      match nova_equacao:
         case 1:
            e = c + d
